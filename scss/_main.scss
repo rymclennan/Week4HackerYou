@@ -1,0 +1,167 @@
+main {
+	// height: 100vh;
+	text-align: center;
+	// display: flex;
+	align-items: center;
+	//MEDIA QUERY 940px
+}
+
+h2 {
+	font-size: 4.5rem;
+	text-shadow: 0.7px 0.7px grey;
+	@media (max-width: 320px) {
+		font-size: 2.5rem;
+	}
+}
+
+ul.category-flex {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	margin: 4rem auto;
+	padding: 0;
+	@media (max-width: 940px) {
+		justify-content: center;
+	}
+	@media (max-width: 660px) {
+		width: 40rem;
+		flex-wrap: wrap;
+	}
+	@media (max-width: 320px) {
+		width: 31rem;
+	}
+	li {
+		margin: 1rem;
+		@media (max-width: 660px) {
+			margin: 2rem 0.5rem;
+		}
+		a {
+			@include pulsingbutton(2rem, 1rem, 1.5rem);
+			color: #00ADF2;
+			@media (max-width: 940px) {
+				font-size: 1.5rem;
+				padding: 1rem;
+
+			}
+		}
+	}
+}
+
+.advice-flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(255,255,255,0.25);
+	padding: 2rem;
+	border-radius: 2rem;
+	height: 40rem;
+	//MEDIA QUERY 940px
+	@media (max-width: 940px) {
+			width: 85%;
+			margin: auto;
+	}
+	@media (max-width: 660px) {
+		flex-direction: column;
+		height: 50rem;
+	}
+	@media (max-width: 480px) {
+		height: 55rem;
+	}
+	.image-credit-flex {
+		.image-flex {
+			width: 300px;
+			img {
+				max-width: 100%;
+			}
+			
+			@media (max-width: 660px) {
+				width: 200px;
+			}
+		}
+	}
+	.quote-flex {
+		width: 50rem;
+		@media (max-width: 940px) {
+			width: 30rem;
+		}
+		@media (max-width: 320px) {
+			width: 20rem;
+		}
+		h3 {
+			text-align: left;
+			font-size: 3rem;
+			@media (max-width: 940px) {
+				font-size: 2rem;
+			}
+		}
+		h4 {
+			text-align: right;
+			font-size: 2rem;
+		}
+	}
+}
+
+.button-flex {
+	margin: 3.5rem 0 0;
+	a, button {
+		font-size: 2rem;
+		margin: 0 2rem;
+		text-transform: capitalize;
+		padding: 1rem 2rem;
+		border: none;
+		background: none;
+		border: 1px solid snow;
+		border-radius: 5px;
+		outline: none;
+		transition: all 0.45s ease;
+		&:hover {
+			background: rgba(255,255,255,0.4);
+		}
+		@media (max-width: 480px) {
+			font-size: 1.2rem;
+		}
+		@media (max-width: 320px) {
+			margin: 2rem;
+		}
+	}
+
+}
+
+.wild-card-button-flex {
+	display: flex;
+	justify-content: flex-end;
+	.wild-card-container {
+		width: 50px;
+		@media (max-width: 940px) {
+			margin-right: 35px;
+		}
+		@media (max-width: 480px) {
+			margin: 20px 40px 10px 0;
+		}
+ 	}
+	img {
+		max-width: 100%;
+	}
+}
+
+
+.devil-mode {
+	body{
+    background: #8E0E00 ; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #8E0E00  , #1F1C18 ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #8E0E00  , #1F1C18 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    }
+	.category-flex a {
+	-webkit-animation-name: redPulse;
+	color: #FFF400;
+	}
+
+}
+
+
+
+// JUST PLAYIN'... EDIT LATER
+// .image-flex {
+// 	margin: 20px;
+// }

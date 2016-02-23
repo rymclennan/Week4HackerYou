@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>What Would Yeezus Do?</title>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="shortcut icon" type="image/png" href="assets/kanyeFav.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Created and coded by MK Reyes and I. Illustrations by MK Reyes. -->
+	
+<!-- START of header flex -->
+ 	<header>
+		<div class="wrapper">
+
+			<div class="header-flex">
+				<div class="header-text-flex">
+					<h1><span class="capital">W</span>hat <span class="capital">W</span>ould <span class="capital">Y</span>eezus <span class="capital">D</span>o?</h1>
+					<p>When you need guidance...</p>
+				</div>
+				<div class="header-image-flex">
+					<img src="assets/main-img.png" alt="Picture of baby Yeezus">
+					<!-- Picture of Baby Yeezus -->
+				</div>
+			</div>
+			<div class="header-button">
+				<a href="#yeezy" class="smoothScroll">Let Yeezus Take The Wheel</a>
+			</div>
+		</div>
+ 	</header>
+
+<!-- END of header section -->
+
+	<main id="yeezy">
+		<div class="wrapper">
+			<h2>Pick a category. <br>Find out what Yeezus would do!</h2>
+
+			<div class="main-flex">
+				<ul class="category-flex">
+					<li><a href="#" data-category="love">Love</a></li>
+					<li><a href="#" data-category="money">Money</a></li>
+					<li><a href="#" data-category="spirituality">Spirituality</a></li>
+					<li><a href="#" data-category="career">Career</a></li>
+					<li><a href="#" data-category="health">Health &amp; Well-Being</a></li>
+				</ul>
+			</div>
+			
+<!--CONTENTS IN ADVICE FLEX + BUTTON FLEX WILL BE FED BY JQUERY-->
+			<div class="advice-flex">
+				<div class="image-credit-flex">
+				</div>
+
+				<div class="quote-flex">
+				</div>
+			</div>
+			<div class="button-flex">
+				<a href="#" class="advice-button" data-category="nextQuote"></a>
+				<button class="reset-button">Pick Another Category</button>
+			</div>
+
+			<div class="wild-card-button-flex">
+				<div class="wild-card-container">
+					<a href="#" data-category="wildcard"><img id="angel-ye" src="assets/angel-ye.png" alt="Wild Card Button!"></a>
+				</div>
+			</div>
+		</div>	
+	</main>
+	<footer>
+		<div class="contact">
+			<h5>Created by <a href="http://hellomkreyes.com">MK Reyes</a> and <a href="http://ryanmclennan.ca">Ryan McLennan</a></h5>
+		</div>
+		
+		<div class="twitter">
+			<a href="#"><i class="fa fa-twitter"></i></a>
+		</div>
+
+		<div class="disclaimer">
+			<h5>Disclaimer: We are in no way affiliated with Kanye West.</h5>
+		</div>
+	</footer>
+
+
+	
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script type="text/javascript" src="scripts/smoothscroll.js"></script>
+<script src="scripts/quotes.js"></script>
+
+</body>
+</html>
